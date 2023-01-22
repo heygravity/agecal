@@ -10,7 +10,12 @@ function myAge(){
     var calAge = currentDate-age;
     var vlength = calAge.toString().length;
     //alert(vlength);
+    //alert(calAge);
     if(vlength==2){
         alert(calAge+" Days");
+    }
+    else{
+        let temp = calAge.toString();
+        alert(temp.slice(0,2)+" Years Old");
     }
 }
