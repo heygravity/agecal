@@ -2,11 +2,11 @@ function myAge(){
     var ageY = document.getElementById('age').value.slice(0,4);
     var ageM = document.getElementById('age').value.slice(5,7);
     var ageD = document.getElementById('age').value.slice(8,10);
-    var age = ageY + ageM + ageD;
+    //var age = ageY + ageM + ageD;
     var currentDateY = new Date().toJSON().slice(0, 4);
     var currentDateM = new Date().toJSON().slice(5, 7);
     var currentDateD = new Date().toJSON().slice(8, 10);
-    var currentDate = currentDateY + currentDateM + currentDateD;
+    /*var currentDate = currentDateY + currentDateM + currentDateD;
     var calAge = currentDate-age;
     var vlength = calAge.toString().length;
     //alert(vlength);
@@ -15,7 +15,24 @@ function myAge(){
         alert(calAge+" Days");
     }
     else{
-        let temp = calAge.toString();
-        alert(temp.slice(0,2)+" Years Old");
+        //let temp = calAge.toString();
+        //alert(temp.slice(0,2)+" Years Old");
+        
+    }*/
+    var Y = currentDateY-ageY;
+    var M = currentDateM-ageM;
+    var D = currentDateD-ageD;
+    if(M<1 && D<1){
+        alert((Y-1)+" Years ");
     }
+    if(D<1){
+        alert((Y-1)+" Years "+M+" Months ");
+    }
+    if(M<1){
+        alert((Y-1)+" Years "+D+" Days Old");
+    }
+    else{
+        alert(Y+" Years "+M+" Months "+D+" Days Old");
+    }
+    //alert(Y+" Years "+M+" Months "+D+" Days Old");
 }
