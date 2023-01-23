@@ -25,10 +25,10 @@ function myAge(){
     if(M<1 && D<1){
         alert((Y-1)+" Years ");
     }
-    if(D<1){
+    else if(D<1){
         alert((Y-1)+" Years "+M+" Months ");
     }
-    if(M<1){
+    else if(M<1){
         alert((Y-1)+" Years "+D+" Days Old");
     }
     else{
