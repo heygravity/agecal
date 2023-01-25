@@ -22,14 +22,11 @@ function myAge(){
     var Y = currentDateY-ageY;
     var M = currentDateM-ageM;
     var D = currentDateD-ageD;
-    if(M<1 && D<1){
+    if(M==0 && D==0){
         alert((Y-1)+" Years ");
     }
-    else if(D<1){
-        alert((Y-1)+" Years "+M+" Months ");
-    }
-    else if(M<1){
-        alert((Y-1)+" Years "+D+" Days Old");
+    else if(M<0){
+        alert((Y-1)+" Years ");
     }
     else{
         alert(Y+" Years "+M+" Months "+D+" Days Old");
