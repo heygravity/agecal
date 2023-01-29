@@ -1,2 +1,2 @@
-# agecal
-Age Calculator
+# Age Calculator
+Age Calculator is Web Prtoject which finds your age with the current system date and time. This project has made Front-End Using BootStrap Studios and for backend we have used Javascript.
